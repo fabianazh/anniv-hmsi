@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Hero() {
     return (
         <section
@@ -11,7 +13,15 @@ export default function Hero() {
                 labore?
             </div>
             {/* Shape */}
-            <div className="absolute -bottom-40 left-1/2 -translate-x-1/2 w-48 aspect-square bg-blue-600"></div>
+            <div className="absolute -bottom-72 left-1/2 -translate-x-1/2 w-auto">
+                <Image
+                    src={'/img/3d.png'}
+                    alt=""
+                    height={600}
+                    width={600}
+                    className="w-[35rem] h-fit"
+                />
+            </div>
             {/* End Shape */}
         </section>
     );
